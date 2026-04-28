@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Informacje o Bali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Informacje o Bali</h1>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="info.html">Informacje</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Ciekawostki</h2>
+    <button onclick="showFact()">Pokaż ciekawostkę</button>
+    <p id="fact"></p>
+</section>
+
+<section>
+    <h2>Quiz – Czy znasz Bali?</h2>
+
+    <p>1. W jakim kraju leży Bali?</p>
+    <button onclick="checkAnswer(1, 'a')">Indonezja</button>
+    <button onclick="checkAnswer(1, 'b')">Tajlandia</button>
+
+    <p>2. Co jest symbolem Bali?</p>
+    <button onclick="checkAnswer(2, 'a')">Świątynie</button>
+    <button onclick="checkAnswer(2, 'b')">Piramidy</button>
+
+    <p>3. Jaki klimat panuje na Bali?</p>
+    <button onclick="checkAnswer(3, 'a')">Tropikalny</button>
+    <button onclick="checkAnswer(3, 'b')">Polarny</button>
+
+    <h3 id="score"></h3>
+</section>
+
+<footer>
+    <p>Informacje i quiz</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
